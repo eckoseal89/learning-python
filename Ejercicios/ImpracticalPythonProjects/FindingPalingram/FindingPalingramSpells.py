@@ -1,7 +1,11 @@
-dic1 = "C:\\Users\\david\\Nextcloud\\David\\learning-python\\Ejercicios\\ImpracticalPythonProjects\\FindingPalingram\\12dicts-6.0.2\\International\\3of6all.txt"
-f = open(dic1, "r")
+import os, load_dictionary
 
-for w in f:
-    w2 = w[::-1]
-    if w == w2:
-        print(w)
+path = os.path.dirname(os.path.abspath(__file__))
+dic1 = path + "\\12dicts-6.0.2\\American\\2of12.txt"
+
+wordlist = load_dictionary.load(dic1)
+
+for word in wordlist:
+    w2 = word[::-1]
+    if word == w2:
+        print(word)
