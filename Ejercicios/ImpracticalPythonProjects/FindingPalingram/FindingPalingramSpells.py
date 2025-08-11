@@ -1,3 +1,4 @@
+#Ejercicio Finding Palingrams 
 import os, load_dictionary
 
 path = os.path.dirname(os.path.abspath(__file__))
